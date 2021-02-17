@@ -97,7 +97,6 @@ class Notepad:
 		
 	def __quitApplication(self): 
 		self.__root.destroy() 
-		# exit() 
 
 	def __showAbout(self): 
 		showinfo("Notepad","Mrinal Verma") 
@@ -110,12 +109,10 @@ class Notepad:
 
 		if self.__file == "": 
 			
-			# no file to open 
 			self.__file = None
 		else: 
 			
-			# Try to open the file 
-			# set the window title 
+
 			self.__root.title(os.path.basename(self.__file) + " - Notepad") 
 			self.__thisTextArea.delete(1.0,END) 
 
