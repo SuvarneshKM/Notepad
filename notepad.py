@@ -131,7 +131,6 @@ class Notepad:
 	def __saveFile(self): 
 
 		if self.__file == None: 
-			# Save as new file 
 			self.__file = asksaveasfilename(initialfile='Untitled.txt', 
 											defaultextension=".txt", 
 											filetypes=[("All Files","*.*"), 
@@ -141,12 +140,10 @@ class Notepad:
 				self.__file = None
 			else: 
 				
-				# Try to save the file 
 				file = open(self.__file,"w") 
 				file.write(self.__thisTextArea.get(1.0,END)) 
 				file.close() 
 				
-				# Change the window title 
 				self.__root.title(os.path.basename(self.__file) + " - Notepad") 
 				
 			
@@ -166,7 +163,6 @@ class Notepad:
 
 	def run(self): 
 
-		# Run main application 
 		self.__root.mainloop() 
 
 
