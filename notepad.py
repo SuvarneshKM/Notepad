@@ -39,17 +39,13 @@ class Notepad:
 
 		self.__root.title("Untitled - Notepad") 
 
-		# Center the window 
 		screenWidth = self.__root.winfo_screenwidth() 
 		screenHeight = self.__root.winfo_screenheight() 
 	
-		# For left-alling 
 		left = (screenWidth / 2) - (self.__thisWidth / 2) 
 		
-		# For right-allign 
 		top = (screenHeight / 2) - (self.__thisHeight /2) 
 		
-		# For top and bottom 
 		self.__root.geometry('%dx%d+%d+%d' % (self.__thisWidth, 
 											self.__thisHeight, 
 											left, top)) 
