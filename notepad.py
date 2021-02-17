@@ -50,11 +50,9 @@ class Notepad:
 											self.__thisHeight, 
 											left, top)) 
 
-		# To make the textarea auto resizable 
 		self.__root.grid_rowconfigure(0, weight=1) 
 		self.__root.grid_columnconfigure(0, weight=1) 
 
-		# Add controls (widget) 
 		self.__thisTextArea.grid(sticky = N + E + S + W) 
 		
 		# To open new file 
