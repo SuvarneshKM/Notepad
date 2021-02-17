@@ -8,7 +8,6 @@ class Notepad:
 
 	__root = Tk() 
 
-	# default window width and height 
 	__thisWidth = 300
 	__thisHeight = 300
 	__thisTextArea = Text(__root) 
@@ -17,13 +16,11 @@ class Notepad:
 	__thisEditMenu = Menu(__thisMenuBar, tearoff=0) 
 	__thisHelpMenu = Menu(__thisMenuBar, tearoff=0) 
 	
-	# To add scrollbar 
 	__thisScrollBar = Scrollbar(__thisTextArea)	 
 	__file = None
 
 	def __init__(self,**kwargs): 
 
-		# Set icon 
 		try: 
 				self.__root.wm_iconbitmap("Notepad.ico") 
 		except: 
