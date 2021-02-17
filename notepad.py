@@ -26,7 +26,6 @@ class Notepad:
 		except: 
 				pass
 
-		# Set window size (the default is 300x300) 
 
 		try: 
 			self.__thisWidth = kwargs['width'] 
@@ -38,7 +37,6 @@ class Notepad:
 		except KeyError: 
 			pass
 
-		# Set the window text 
 		self.__root.title("Untitled - Notepad") 
 
 		# Center the window 
